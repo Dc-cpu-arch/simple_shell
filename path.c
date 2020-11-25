@@ -9,11 +9,8 @@
 int path(char *line, char **args)
 {
 	char *copy, *tokens, *tmp, *command, *tmpp;
-	char *path, *address, *test;
-	char tmp2[1] = "/";
+	char *path, *address, *test, tmp2[1] = "/", *list[1024];
 	int i = 0, j = 1, h = 0;
-	char *list[1024];
-
 	struct stat st;
 
 	copy = _getenv("PATH", environ);
@@ -22,18 +19,15 @@ int path(char *line, char **args)
 	tokens = strtok(copy, "PATH=");
 	tmpp = _strdup(tokens);
 	list[0] = strtok(tmpp, ":");
-
 	while (tmpp != NULL)
-		{
-			list[j] = strtok(NULL, ":");
-			j++;
-		}
+	{
+		list[j] = strtok(NULL, ":");
+		j++;
+	}
 	command = _strcat(tmp2, tmp);
-	printf("asd");
 
 	while (list[j])
 	{
-		printf("PATH IS %s\n", path);
 		path = _strcat(list[j], command);
 		printf("PATH IS %s\n", path);
 		if (stat(path, &st) == 0)
