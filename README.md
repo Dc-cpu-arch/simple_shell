@@ -96,13 +96,12 @@ total 140
 
 ---
 
-## BUILT-IN COMMANDS 
-
+## BUILT-IN COMMANDS
 
 
 | Command | Description  |
 | ------- | --- |
-| exit | Exit simple shell|	
+| exit | Exit simple shell|
 | env | Display environment variables |
 | setenv | Set environment variable value or create a new one |
 | unsetenv | Delete environment variable |
