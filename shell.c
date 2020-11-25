@@ -9,7 +9,7 @@
  */
 int main(int argc, char **argv, char *envp[])
 {
-	printf("asdfasdf");
+	(void)argc, (void)argv;
 	floop(envp);
 	return (EXIT_SUCCESS);
 }
