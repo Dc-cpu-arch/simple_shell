@@ -52,7 +52,7 @@ int path(char *line, char **args)
  */
 char *_getenv(const char *name, char **env)
 {
-	int i, j, check, l = 0;
+	int i, j, check, k = 0, l = 0;
 
 	if (!env)
 		return (NULL);
@@ -65,6 +65,6 @@ char *_getenv(const char *name, char **env)
 				check++;
 		if (check == l && env[i][check] == '=')
 			return (env[i]);
-	}
+        }
 	return (NULL);
 }
