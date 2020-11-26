@@ -45,7 +45,6 @@ int execute(char *line, char **args, char *envp[])
 				perror("Does not execute, write valid command");
 				return (0);
 			}
-			return (2);
 		}
 	}
 	return (1);
