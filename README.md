@@ -70,8 +70,6 @@ $ echo Hello World!
 ```
  Hello World!
 ```
-<div align="center"><img src="images/hello_world.png" width="200" height="50" /> </div>
-
 ### NON-INTERACTIVE MODE:
 
 ```
@@ -90,11 +88,6 @@ total 140
 -rw-rw-r-- 1 vagrant vagrant 639 Aug 13 19:14 0_principal_header.h
 (...)
 ```
-<div align="center"><img src="images/ls.png" width="480" height="150" /> </div>
----
-<div align="center">
-
----
 
 ## BUILT-IN COMMANDS
 

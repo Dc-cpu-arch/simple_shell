@@ -18,12 +18,6 @@ char *read_line(void)
 		exit(EXIT_FAILURE);
 	}
 
-	if (cmp(line) == 99)
-	{
-		free(line);
-		exit(EXIT_SUCCESS);
-		return (0);
-	}
 	return (line);
 }
 
