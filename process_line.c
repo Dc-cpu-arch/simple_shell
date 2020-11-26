@@ -48,7 +48,8 @@ char **split_line(char *line)
 		if (i >= bufsz)
 		{
 			bufsz += BUFSZ;
-			tokens = realloc(tokens, bufsz * sizeof(char *));
+			tokens = NULL;
+			tokens = malloc(bufsz * sizeof(char *));
 			if (!tokens)
 			{
 				fprintf(stderr, "Error allocating memory\n");

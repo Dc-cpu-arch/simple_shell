@@ -9,13 +9,11 @@
 char **_strtok(char *s, char *delm)
 {
 	static int currIndex;
-	char **W;
+	char **W = (char **)malloc(sizeof(char) * 100);
 	int i = currIndex, k = 0, j = 0;
 
 	if (!s || !delm || s[currIndex] == '\0')
 		return (NULL);
-
-	W = (char **)malloc(sizeof(char) * 100);
 
 	while (s[i] != '\0')
 	{
@@ -115,7 +113,7 @@ char *_strdup(char *str)
 	}
 	for (size = 0; str[size] != 0; size++)
 	{}
-	dest = malloc((size + 1) * sizeof(char));
+	dest = malloc(sizeof(char) * size + 1);
 	for (i = 0; i <= size; i++)
 		dest[i] = str[i];
 	dest[i] = '\0';
