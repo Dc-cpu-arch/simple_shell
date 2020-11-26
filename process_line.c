@@ -17,7 +17,6 @@ char *read_line(void)
 		write(STDOUT_FILENO, "\n", 1);
 		exit(EXIT_FAILURE);
 	}
-
 	return (line);
 }
 
